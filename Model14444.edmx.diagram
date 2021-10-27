@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="66f19a9a93b04abfada2e22c428a79dd" Name="Diagram1">
+        <EntityTypeShape EntityType="LayminModel.Cabinet" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.CabinetSpecialty" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Card" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Clinic" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Insurance" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.InsuranceCompany" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Patient" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Record" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Role" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Specialty" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.Staff" Width="1.5" PointX="5.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LayminModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="LayminModel.FK_Cabinet_CabinetSpecialty" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Record_Cabinet" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Card_Clinic" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Card_Insurance" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Card_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Record_Card" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Insurance_InsuranceCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Record_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Staff_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="LayminModel.FK_Staff_Specialty" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

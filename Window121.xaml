@@ -1,0 +1,85 @@
+﻿<Window x:Class="Laymin.Window121"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laymin"
+        mc:Ignorable="d"
+        Title="Войти" MinHeight="600" MinWidth="300" Height="600" Width="300" Background="#FF9A9AA6" >
+    <Grid Background="#FFFFF33">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" 
+               Content="Вход" 
+               FontSize="28" 
+               HorizontalAlignment="Center"                
+               VerticalAlignment="Center" 
+               Width="74" 
+               Height="43"               
+               FontFamily="Roboto" 
+               Foreground="White"/>
+
+        <Image Grid.Row="1"
+               Source="..\Ress\user 1.png"
+               Width="150" 
+               Height="150"
+               />
+        <wpfTool:WatermarkTextBox x:Name="Log1"
+                 Grid.Row="2"
+                 VerticalAlignment="Center" 
+                 Width="180"
+                 Height="45" 
+                 Background="White" 
+                 BorderBrush="White"  
+                 Padding="7"
+                 FontSize="18"
+                 Style="{DynamicResource WatermarkTextBoxStyle1}"
+                 >
+            <wpfTool:WatermarkTextBox.Watermark>
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock  Text="Ваш логин" 
+                                Margin="10 0 0 0" 
+                                VerticalAlignment="Center"
+                                />
+                </StackPanel>
+            </wpfTool:WatermarkTextBox.Watermark>
+        </wpfTool:WatermarkTextBox>
+
+
+        <wpfTool:WatermarkPasswordBox x:Name="Pas1" 
+                                      HorizontalAlignment="Center" 
+                                      Grid.Row="3"  
+                                      VerticalAlignment="Center" 
+                                      Width="180"
+                                      Height="45" 
+                                      Background="White" 
+                                      BorderBrush="White"  
+                                      Padding="7"
+                                      FontSize="18"
+                                      Style="{DynamicResource WatermarkPasswordBoxStyle1}">
+            <wpfTool:WatermarkPasswordBox.Watermark>
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock  Text="Ваш пароль" 
+                                Margin="10 0 0 0" 
+                                VerticalAlignment="Center"/>
+                </StackPanel>
+            </wpfTool:WatermarkPasswordBox.Watermark>
+        </wpfTool:WatermarkPasswordBox>
+
+        <Button x:Name="Enter"
+            Grid.Row="5" 
+            Background="White"
+            BorderBrush="White"
+            Content="Войти"
+            FontSize="18"
+            Style="{DynamicResource ButtonStyle1}" Click="Enter_Click"
+            />
+
+    </Grid>
+</Window>
